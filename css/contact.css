@@ -138,151 +138,108 @@
     color: #000;
 }
 /* ============Shop Banner============== */
-  /* ==========bill information=========== */
+  /* ==========Contact information=========== */
 
 
-.bill_content {
+/* Header */
+.container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    
+    flex-wrap: wrap;
+    gap: 42px;
+    margin-bottom: 20px;
+}
+.contact_content{
+    display: flex;
+    gap: 82px;
+}
+.info-item {
+    flex: 1 1 30%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info-item i {
+    font-size: 24px;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.info-item h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.info-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
-}
-.first{
-  width: 211px;
-}
-.last{
-  width: 211px;
-}
-.name{
-  display: flex;
-  justify-content: space-between;
-}
-.billing-form, .order-summary {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1 1 45%;
 }
 
-form label {
-    display: block;
-    margin: 10px 0 5px;
+.contact-form label {
+    flex: 1 1 100%;
+    margin-bottom: 5px;
+    color: #333;
 }
 
-form input, form select, form button {
-    width: 100%;
-    padding: 10px;
+.contact-form input, .contact-form textarea {
+    flex: 1 1 100%;
     margin-bottom: 15px;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
 
-button {
-    background-color: #008cba;
-    color: #ffffff;
+.contact-form button {
+    flex: 1 1 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-button:hover {
-    background-color: #005f8f;
-}
-
-.checkout-container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 100%;
-}
-
-/* Sections */
-.product-details, .total-details, .payment-method, .privacy-policy {
-  margin-bottom: 20px;
-}
-
-/* Headers and Text */
-.product-details h2, .total-details h3, .payment-method h4 {
-  margin-bottom: 10px;
-}
-
-.product-details p, .total-details p, .payment-method p, .privacy-policy p {
-  margin-bottom: 8px;
-}
-
-.product-details p span {
-  font-weight: bold;
-}
-
-.total-details h3 {
-  color: #ff5722;
-}
-
-/* Payment and Privacy */
-.Product_onfo{
-  display: flex;
-  justify-content: space-between;
-}
-.payment-method label {
-  display: block;
-  margin: 10px 0;
-}
-
-.payment-method input {
-  margin-right: 10px;
-}
-
-.privacy-policy a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.privacy-policy a:hover {
-  text-decoration: underline;
-}
-
-/* Button */
-.place-order {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.place-order:hover {
-  background-color: #0056b3;
+.contact-form button:hover {
+    background-color: #0056b3;
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
-  .checkout-container {
-      padding: 15px;
-  }
-
-  .place-order {
-      padding: 10px;
-      font-size: 14px;
-  }
-}
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .billing-form, .order-summary {
-        width: 100%;
+@media (max-width: 768px) {
+    .info-item {
+        flex: 1 1 100%;
     }
 }
+  /* ==========contact information=========== */
 
-  /* ==========bill information=========== */
   /* Features Section */
 .features-section {
   height: 270px;

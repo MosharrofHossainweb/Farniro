@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <!-- ==================Poppins font=========================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,7 +32,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="icons">
           <a href="#"><img src="image/man.png" alt="User" /></a>
@@ -57,95 +57,59 @@
 
   </section>
   <!-- ====================== Banner=================== -->
-   <!-- =================Bill Information============== -->
+   <!-- =================Contact Information============== -->
    <div class="container">
-    <div class="bill_content">
+    <h1>Get In Touch With Us</h1>
+    <p>For More Information About Our Products & Services, Feel Free to Reach Out!</p>
+    
+    <!-- Contact Information -->
+     <div class="contact_content">
 
-      <div class="billing-form">
-        <h2>Billing Details</h2>
-        <form>
-          <div class="name">
-
-            <label for="first-name">First Name</label>
-            <br>
-            <input class="first" type="text" id="first-name" name="first-name" required>
-            
-            
-            <label for="last-name">Last Name</label>
-            <input class="last" type="text" id="last-name" name="last-name" required>
-          </div>
-
-            <label for="company-name">Company Name (Optional)</label>
-            <input type="text" id="company-name" name="company-name">
-
-            <label for="country">Country/Region</label>
-            <select id="country" name="country" required>
-                <option value="china">China</option>
-                <option value="others">Others</option>
-            </select>
-
-            <label for="street-address">Street Address</label>
-            <input type="text" id="street-address" name="street-address" required>
-
-            <label for="city">City</label>
-            <input type="text" id="city" name="city" required>
-            
-            <label for="province">Province</label>
-            <input type="text" id="province" name="province" required>
-            
-            <label for="zip-code">ZIP Code</label>
-            <input type="text" id="zip-code" name="zip-code" required>
-            
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" required>
-            
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
-          </form>
+         <div class="contact-info">
+             <div class="info-item">
+                 <i class="fas fa-map-marker-alt"></i>
+                 <div>
+                     <h3>Address</h3>
+                     <p>236 5th SE Avenue, New York, NY10000, USA</p>
+                    </div>
         </div>
-        <div class="checkout-container">
-          <!-- Product Details -->
-           <div class="Product_onfo">
-
-             <div class="product-details">
-               <h2>Product</h2>
-               <h2>Subtotal</h2>
-               <p>Asgaard Sofa <span>x 1</span></p>
-               <p>Rs. 250,000.00</p>
-              </div>
-              
-              <!-- Total Details -->
-              <div class="total-details">
-                <p>Subtotal</p>
-                <p>Rs. 250,000.00</p>
-                <h3>Total</h3>
-                <h3>Rs. 250,000.00</h3>
-              </div>
+        <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+                <h3>Phone</h3>
+                <p>Mobile: + (84) 546-6789<br>Hotline: + (84) 456-6789</p>
             </div>
-              
-          <!-- Payment Method -->
-          <div class="payment-method">
-              <h4>Payment Options</h4>
-              <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
-              <label>
-                  <input type="radio" name="payment" value="bank-transfer" checked> Direct Bank Transfer
-              </label>
-              <label>
-                  <input type="radio" name="payment" value="cash-on-delivery"> Cash On Delivery
-              </label>
-          </div>
-  
-          <!-- Privacy Policy -->
-          <div class="privacy-policy">
-              <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy</a>.</p>
-          </div>
-  
-          <!-- Place Order Button -->
-          <button class="place-order">Place Order</button>
-      </div>
         </div>
+        <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+                <h3>Working Hours</h3>
+                <p>Mon-Fri: 9:00 AM - 10:00 PM<br>Sat-Sun: 9:00 AM - 9:00 PM</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter subject">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 </div>
-   <!-- =================Bill Information============== -->
+</div>
+   <!-- =================contact Information============== -->
      <!-- Features Section -->
      <section class="features-section">
       <div class="feature">
