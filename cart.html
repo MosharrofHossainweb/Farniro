@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <a href="#"><img src="image/man.png" alt="User" /></a>
+            <a href="#"><img src="image/search.png" alt="Search" /></a>
+            <a href="#"><img src="image/heart.png" alt="Favorites" /></a>
+            <a href="cart.html"><img src="image/cart-outlined.png" alt="Cart" /></a>
+        </div>
+    </nav>
+
+    <!-- Shop Banner -->
+    <section class="shop_banner">
+        <div class="shop_content">
+            <h2 class="cart">Cart</h2>
+            <div class="link">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <i class="fa-solid fa-greater-than"></i>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Table -->
+    <div class="container">
+        <div class="cart-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="image/Group 146.png" alt="Asgaard Sofa">
+                            <span>Asgaard Sofa</span>
+                        </td>
+                        <td>Rs. 250,000.00</td>
+                        <td><input type="number" value="1"></td>
+                        <td>Rs. 250,000.00</td>
+                        <td><button class="remove-item">🗑️</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="cart-totals">
+            <h2>Cart Totals</h2>
+            <p>Subtotal: Rs. 250,000.00</p>
+            <p>Total: Rs. 250,000.00</p>
+            <a href="checkout.html">Check Out</a>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="feature">
+            <img src="image/Vectorfeature.png" alt="High Quality Icon">
+            <div class="text">
+                <h3>High Quality</h3>
+                <p>Crafted from top materials</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img src="image/Group(1).png" alt="Warranty Protection Icon">
+            <div class="text">
+                <h3>Warranty Protection</h3>
+                <p>Over 2 years</p>
+            </div> 
+        </div>
+        <div class="feature">
+            <img src="image/Vectorfeature.png" alt="Free Shipping Icon">
+            <div class="text">
+                <h3>Free Shipping</h3>
+                <p>Order over $150</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img src="image/Group(1).png" alt="24/7 Support Icon">
+            <div class="text">
+                <h3>24/7 Support</h3>
+                <p>Dedicated support</p>
+            </div> 
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="column">
+            <h2>Funiro.</h2>
+            <p>400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+        </div>
+        <div class="column">
+            <h4>Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Help</h4>
+            <ul>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Privacy Policies</a></li>
+            </ul>
+        </div>
+        <div class="column newsletter">
+            <h4>Newsletter</h4>
+            <input type="email" placeholder="Enter Your Email Address" />
+            <button>SUBSCRIBE</button>
+        </div>
+    </footer>
+    <div class="footer-bottom">2023 Funiro. All rights reserved.</div>
+</body>
+</html>

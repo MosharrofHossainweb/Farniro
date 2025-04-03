@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+.container {
+    width: 1230px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  /* ===========Navber============ */
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 75px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #007bff;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .icons a img {
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .icons a img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+  
+    .icons {
+      justify-content: flex-start;
+      gap: 10px;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .nav-links li a {
+      font-size: 14px;
+    }
+  
+    .icons a img {
+      height: 24px;
+      width: 24px;
+    }
+  
+    .navbar {
+      padding: 10px;
+    }
+  }
+  /* =========Navber part========= */
+  /* ==========bill information=========== */
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.billing-form, .order-summary {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 45%;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #008cba;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f8f;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .billing-form, .order-summary {
+        width: 100%;
+    }
+}
+
+  /* ==========bill information=========== */
