@@ -43,7 +43,7 @@
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 75px;
   flex-wrap: wrap;
 }
 
@@ -301,6 +301,7 @@
 }
 
 /* ========== Slider Section ========== */
+/* ========== Slider Section ========== */
 .slider {
   width: 100%;
   padding: 20px;
@@ -319,13 +320,13 @@
 }
 
 .slider_text h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #3a3a3a;
 }
 
 .slider_text p {
-  font-size: 16px;
+  font-size: 1rem;
   color: #616161;
   font-weight: 500;
 }
@@ -344,21 +345,24 @@
   flex: 1;
   max-width: 900px;
   overflow: hidden;
+  position: relative;
 }
 
 .slides {
   display: flex;
+  
   transition: transform 0.5s ease-in-out;
 }
 
 .slide {
-  min-width: 100%;
+  min-width: 50%;
+  position: relative;
 }
 
 .content {
   position: absolute;
-  top: 20%;
-  left: 10%;
+  bottom: 20px;
+  left: 20px;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 20px;
@@ -378,13 +382,31 @@
   background-color: #000;
   color: #fff;
   border: none;
-  padding: 10px 15px;
+  padding: 10px;
   border-radius: 50%;
   opacity: 0.7;
 }
 
 .slider-controls button:hover {
   opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slider_content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .slider_text {
+    max-width: 100%;
+  }
+  .slider_part {
+    max-width: 100%;
+  }
+  .content {
+    bottom: 10px;
+    left: 10px;
+  }
 }
 
 /* ========== Portfolio Section ========== */

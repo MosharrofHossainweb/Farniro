@@ -113,111 +113,118 @@
   }
 }
 /* ========Navber=========== */
-/* ============Shop Banner============== */
-.shop{
+/* ====================== Shop Banner ==================== */
+.shop-title {
   text-align: center;
 }
-.shop_banner {
-  background: url('../image/Rectangle\ 1.png');
-  width: full;
+.shop-banner {
+  background: url('../image/Rectangle\ 1.png') center/cover no-repeat;
+  width: 100%;
   height: 316px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.link {
+.breadcrumb {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.link a{
-    color: #000;
+.breadcrumb a {
+  color: #000;
 }
-/* ============Shop Banner============== */
-/* =============fiters============ */
-/* Filter Section */
+/* ====================== Shop Banner ==================== */
+
+/* ======================== Filter Section ======================== */
+/* Filter Section Container */
+.filter-section {
+  width: 100%;
+  background: #f9f1e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
 .filter-section .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border-radius: 8px;
-    
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-radius: 8px;
 }
-.filter-section{
-    width: full;
-    background: #F9F1E7;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* Actions */
+
+/* Filter Actions */
 .actions {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.actions span{
-    font-size: 16px;
+
+.actions span {
+  font-size: 16px;
 }
+
 .filter-btn {
-    display: flex;
-    gap: 12px;
-    background: none;
-    border: none;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* View Options */
+.view-options {
+  display: flex;
+  gap: 24px;
 }
 
 .view-icon {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-}
-.view-options{
-    display: flex;
-    gap: 24px;
-}
-.results-text {
-    font-size: 14px;
-    color: #333;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
 }
 
-/* Dropdowns */
+.results-text {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Dropdown Menus */
 .dropdowns {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .dropdown select {
-    padding: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
-/* Responsive Design */
+/* ================== Responsive Design ================== */
 @media (max-width: 768px) {
-    .filter-section .container {
-        flex-direction: column;
-        gap: 20px;
-    }
+  .filter-section .container {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .actions {
-        justify-content: center;
-    }
+  .actions {
+    justify-content: center;
+  }
 
-    .dropdowns {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .dropdowns {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
 }
-/* =============fiters============ */
+/* ======================== Filter Section ======================== */
+
 /* ==========product=========== */
 .Our_product h2 {
     text-align: center;
